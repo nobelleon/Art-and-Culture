@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploration</title>
+    <link rel="stylesheet" href="css/exploration.css">
+</head>
+<body>
+     <!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-counter" id="preloader-counter">0</div>
+</div>
+
+<!-- Debug info -->
+<div class="debug-info" id="debugInfo"></div>
+
+<main>
+  <div class="hero-section">
+    <!-- Enter button -->
+    <div class="switch" id="switchContainer">
+      <button class="switch-button unbutton" id="enterButton">
+        <span class="indicator-dot"></span>
+        ENTER THE ARTS
+      </button>
+    </div>
+
+    <div class="columns">
+      <div class="column column-moveup">
+        <div class="column-inner">
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_1.jpg')" data-index="6"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_2.jpg')" data-index="0"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_3.jpg')" data-index="1"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_4.jpg')" data-index="2"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_5.jpg')" data-index="3"></div>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <div class="column column-movedown">
+        <div class="column-inner">
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_6.jpg')" data-index="4"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_7.jpg')" data-index="5"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_8.jpg')" data-index="6"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_9.jpg')" data-index="0"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_10.jpg')" data-index="1"></div>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <div class="column column-moveup">
+        <div class="column-inner">
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_11.jpg')" data-index="2"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_12.jpg')" data-index="3"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_13.jpg')" data-index="4"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_14.jpg')" data-index="5"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_15.jpg')" data-index="6"></div>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <div class="column column-movedown">
+        <div class="column-inner">
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_16.jpg')" data-index="0"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_17.jpg')" data-index="1"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_16.jpg')" data-index="2"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_11.jpg')" data-index="3"></div>
+            </div>
+          </figure>
+          <figure class="column-item">
+            <div class="column-item-imgwrap">
+              <div class="column-item-img" style="background-image:url('assets/img/ART_10.jpg')" data-index="4"></div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expanding image element -->
+    <div class="expanding-image" id="expandingImage"></div>
+
+    <!-- Caption and category elements -->
+    <div class="slide-caption" id="slideCaption">01 / PAINTINGS</div>
+    <div class="slide-category" id="slideCategory">VISUAL ART</div>
+
+    <div class="content">
+      <div class="content-item"></div>
+      <h1 class="title-wrapper" id="slideTitle">
+        <span class="content-title">Visual</span>
+        <span class="content-title">Arts</span>
+      </h1>
+    </div>
+
+    <div class="content-paragraph" id="content-paragraph">
+      The space between what we see and what exists is where truth resides. In stillness, we find motion. In silence, we hear everything. The photograph captures not just light, but the absence of noise.
+    </div>
+
+    <div class="thumbnails">
+      <div class="thumbnail active" data-index="-1">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_1.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="0">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_2.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="1">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_3.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="2">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_4.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="3">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_5.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="4">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_6.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="5">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_7.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="6">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_8.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="7">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_9.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="8">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_10.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="9">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_11.jpg')"></div>
+      </div>
+       <div class="thumbnail" data-index="10">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_12.jpg')"></div>
+      </div>
+       <div class="thumbnail" data-index="11">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_13.jpg')"></div>
+      </div>
+       <div class="thumbnail" data-index="12">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_14.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="13">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_15.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="14">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_16.jpg')"></div>
+      </div>
+      <div class="thumbnail" data-index="15">
+        <div class="thumbnail-img" style="background-image:url('assets/img/ART_17.jpg')"></div>
+      </div>
+
+     
+      <button class="switch-button unbutton" id="enterButton" onclick="window.location.href='index.html'">
+        <span class="indicator-dot"></span>
+        Home
+      </button>
+    </div>
+    </div>
+
+    <!-- Scroll text with double curly braces -->
+    <div class="scroll-text" id="scrollText">{{ SCROLL }}</div>
+
+</div>
+
+  <!-- Empty content section - 200vh dummy section -->
+  <div class="content-section" id="contentSection"></div>
+
+  <!-- Footer section - 50vh with contact info -->
+  <div class="footer-section">
+    <div class="footer-text">{{ GET IN TOUCH }}</div>
+    <a href="mailto:nobelleon.86@gmail.com" class="footer-email">nobelleon.86@gmail.com</a>
+  </div>
+
+
+</main>
+</body>
+
+<script src="js/exploration.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+
+</html>
